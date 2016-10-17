@@ -1,0 +1,720 @@
+/*--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*--- reset code ---*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol,ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+blockquote,q {
+	quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/* start editing from here */
+a {
+	text-decoration:none;
+}
+.txt-rt {
+	text-align:right;
+}/* text align right */
+.txt-lt {
+	text-align:left;
+}/* text align left */
+.txt-center {
+	text-align:center;
+/*-- W3Layouts --*/	
+}/* text align center */
+.float-rt {
+	float:right;
+}/* float right */
+.float-lt {
+	float:left;
+}/* float left */
+.clear {
+	clear:both;
+}/* clear float */
+.pos-relative {
+	position:relative;
+}/* Position Relative */
+.pos-absolute {
+	position:absolute;
+}/* Position Absolute */
+.vertical-base {	
+	vertical-align:baseline;
+}/* vertical align baseline */
+.vertical-top {	
+	vertical-align:top;
+}/* vertical align top */
+nav.vertical ul li {	
+	display:block;
+}/* vertical menu */
+nav.horizontal ul li {	
+	display: inline-block;
+}/* horizontal menu */
+img {
+	max-width:100%;
+}
+
+/*--- end reset code ---*/
+body {
+	background:url(../../images/background-add-recipe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+	font-family: 'Poiret One', cursive;
+}
+h1.header-agileits {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 35px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 8px;
+}
+p.header-agileits {
+	font-size: 17px;
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 45px;
+    color: #dcdcdc;
+    text-align: center;
+}
+.content-w3ls {
+	width: 72%;
+    margin: 20px auto 50px;
+    background-color: rgba(3, 9, 12, 0.78);
+    border: 1px solid #ffffff;
+    padding:50px;
+}
+.form-wthree1 {
+	margin:0;
+	padding:0;
+	width:45%;
+	float:left;
+}
+.form-wthree2 { 
+	margin:0;
+	padding:0;
+	width:45%;
+	float:right;
+}
+.form-control {
+    padding-bottom: 25px;
+}
+label.header {
+    font-size: 17px;
+    width:195px;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+	position:relative;
+}
+label.header span {
+	position:absolute;
+	right:15px;
+	top:0;
+}
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel,textarea#message {
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: justify;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: normal;
+    background-color: rgba(82, 56, 76, 0.15);
+	font-family: 'Poiret One', cursive;
+}
+input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel {
+	height:40px;
+	padding:0 15px;
+	width:55%;
+}
+select {
+	border: 1px solid #fff;
+    color: #fff;
+    text-align: justify;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: normal;
+    background-color: rgba(82, 56, 76, 0.15);
+	height:40px;
+	padding:0 15px;
+	width:60.8%;
+	font-family: 'Poiret One', cursive;
+}
+select option {
+    background-color: #000;
+    color: #fff;
+	font-family: 'Poiret One', cursive;
+}
+label.enquiry {
+	font-size: 17px;
+    width:200px;
+    font-weight: 500;
+    color: #fff;
+    float: left;
+    text-align: justify;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 25px;
+	position:relative;
+}
+label.enquiry span {
+	position:absolute;
+	right:19px;
+	top:0;
+}
+textarea#message {
+	height:150px;
+	padding:15px;
+	width:79.9%;
+}
+input::-webkit-input-placeholder {
+color:#fff!important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color:#fff!important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color:#fff!important;  
+}
+ 
+input:-ms-input-placeholder {  
+color:#fff!important;  
+}
+textarea::-webkit-input-placeholder {
+color:#fff!important;
+}
+ 
+textarea::-moz-placeholder { /* Firefox 18- */
+color:#fff!important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color:#fff!important;  
+}
+ 
+textarea::-ms-input-placeholder {  
+color:#fff!important;  
+}
+.register {
+	background-color:#4d93c7;
+    width:20%;
+	margin-right:10px;
+	margin-left:200px;
+	float:left;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+	letter-spacing:1px;
+    outline: none;
+    font-size:17px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	font-family: 'Poiret One', cursive;
+}	
+.register:hover {
+	background-color:#36b051;
+	color:#fff;
+}
+.reset {
+	background-color:#a9922c;
+    width:20%;
+	float:left;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+	letter-spacing:1px;
+    outline: none;
+    font-size:17px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	font-family: 'Poiret One', cursive;
+}	
+.reset:hover {
+	background-color:#36b051;
+	color:#fff;
+}
+.form-control.last {
+    padding-bottom: 0;
+}
+p.copyright {
+    font-size: 17px;
+	font-weight:bold;
+    text-align: center;
+    color: #fff;
+	line-height:30px;
+    padding-bottom: 50px;
+}
+p.copyright a {
+	color:#f15f22;
+}
+p.copyright a:hover {
+	color:#36b051;
+}
+
+/*-- responsive design --*/
+@media (max-width:1600px) {
+.content-w3ls {
+    width: 74%;
+}
+textarea#message {
+	width:79.7%;
+}
+select {
+	width:61.2%;
+}
+}
+
+@media (max-width:1440px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+	width:50.9%;
+}
+select {
+    width: 57.5%;
+}
+textarea#message {
+    width: 77.9%;
+    float: right;
+}
+}
+
+@media (max-width:1366px) {
+label.header {
+	font-size:15px;
+	width:180px;	
+}
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    width: 51.5%;
+}
+select {
+    width: 58.6%;
+}
+label.enquiry {
+    font-size: 15px;
+    width: 184px;
+}
+.register {
+	margin-left:189px;
+}
+}
+
+@media (max-width:1280px) {
+h1.header-agileits {
+	font-size:40px;
+}
+label.header span {
+    top: -6px;
+    font-size: 20px;
+}
+label.header {
+    font-size: 14px;
+    width: 175px;
+}
+.form-wthree1,.form-wthree2 {
+	width:47%;
+}
+label.enquiry span {
+    top: -6px;
+    font-size: 20px;
+}
+label.enquiry {
+    font-size: 14px;
+    width: 180px;
+}
+textarea#message {
+    width: 77.2%;
+}
+.register {
+    margin-left: 181px;
+}
+}
+
+@media (max-width:1080px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+	font-size:14px;	
+	width:43%;
+}
+.content-w3ls {
+    width: 75%;
+	padding:40px;
+}
+select {
+    width: 51.5%;
+    font-size: 14px;
+    padding: 0 11px;
+}
+textarea#message {
+    font-size: 14px;
+    width: 73.4%;
+}
+.register {
+	font-size:15px;
+	height:40px;
+	margin-left:180px;
+}
+.reset { 
+	font-size:15px;
+	height:40px;
+}
+p.copyright {
+    font-size: 14px;
+	padding-bottom:25px;
+}
+h1.header-agileits {
+    font-size: 35px;
+	padding-top:25px;
+}
+}
+
+@media (max-width: 1050px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 41%;
+}
+select {
+    width: 50%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 72.5%;
+}
+}
+
+@media (max-width: 1024px) {
+.content-w3ls {
+    width: 77%;
+    padding: 40px;
+}
+}
+
+@media (max-width: 991px) {
+.form-wthree1, .form-wthree2 {
+    width: 100%;
+}
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 71.6%;
+}
+select {
+    width: 75.9%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 71.5%;
+}
+}
+
+@media (max-width: 900px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 68.6%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 68.6%;
+}
+select {
+    width: 73.4%;
+}
+p.copyright {
+    font-size: 14px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+}
+
+@media (max-width: 800px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 64.5%;
+}
+select {
+    width: 70%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 64.5%;
+}
+}
+
+@media (max-width: 768px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 63.1%;
+}
+select {
+    width: 68.7%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 63.3%;
+}
+}
+
+@media (max-width: 736px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 61.5%;
+}
+h1.header-agileits {
+    font-size: 30px;
+    padding-top: 25px;
+}
+select {
+    width: 67.3%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 61.6%;
+}
+}
+
+@media (max-width: 667px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 57.4%;
+}
+select {
+    width: 63.8%;
+}
+label.enquiry {
+    font-size: 14px;
+    width: 179px;
+}
+textarea#message {
+    font-size: 14px;
+    width: 57.5%;
+}
+}
+
+@media (max-width: 640px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 55.5%;
+}
+select {
+    width: 62%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 56%;
+}
+.register {
+    font-size: 14px;
+    height: 40px;
+    margin-left: 179px;
+	width:25%;
+}
+.reset {
+	width:25%;
+	font-size:14px;
+}
+}
+
+@media (max-width: 600px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width:54.8%;
+}
+label.header {
+    font-size: 13px;
+    width: 165px;
+}
+label.enquiry {
+    font-size: 13px;
+    width: 169px;
+}
+textarea#message {
+    font-size: 14px;
+    width: 55%;
+}
+.register {
+    font-size: 14px;
+    height: 40px;
+    margin-left: 170px;
+    width: 25%;
+}
+.content-w3ls {
+	margin:20px auto;
+}
+}
+
+@media (max-width: 568px) {
+.content-w3ls {
+    width: 77%;
+    padding: 30px 35px;
+}
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 52%;
+}
+select {
+    width: 59.7%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 52.5%;
+}
+}
+
+@media (max-width: 480px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 43%;
+}
+select {
+    width: 52%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 43%;
+}
+.register {
+	width:28%;
+}
+.reset {
+    width: 21%;
+}
+}
+
+@media (max-width: 414px) {
+.content-w3ls {
+    width: 70%;
+    padding: 25px 30px;
+}
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 88%;
+}
+select {
+    width: 99%;
+}
+textarea#message {
+    font-size: 14px;
+    width: 87%;
+    float: none;
+}
+label.enquiry {
+	float:none;
+	margin-bottom:15px;
+}
+.register {
+    font-size: 13px;
+    height: 35px;
+    margin-left: 0px;
+    width: 40%;
+}
+.reset {
+	font-size:13px;
+	height:35px;
+	width:40%;
+}
+h1.header-agileits {
+    font-size: 25px;
+    padding-top: 25px;
+}
+}
+
+@media (max-width: 384px) {
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 14px;
+    width: 87%;
+}
+select {
+    width: 99.5%;
+}
+}
+
+@media (max-width: 320px) {
+h1.header-agileits {
+    font-size: 20px;
+    padding-top: 25px;
+}
+.content-w3ls {
+    width: 65%;
+    padding: 25px 25px;
+}
+input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+    font-size: 13px;
+    width: 84%;
+}
+select {
+    width: 99.7%;
+    font-size: 13px;
+}
+textarea#message {
+    font-size: 13px;
+    width: 83%;
+    float: none;
+}
+.register {
+    font-size: 13px;
+    height: 35px;
+    margin-left: 0px;
+    width: 50%;
+}
+.reset {
+	width:43%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*-- /responsive design --*/

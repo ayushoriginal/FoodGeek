@@ -1,0 +1,143 @@
+
+body{
+	font-family: 'Lato', sans-serif !important;
+	margin:0;
+	padding:0;
+	background:url(../images/background-add-recipe.jpg);
+ }
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}
+p{
+	margin:0;
+}
+ul{
+margin:0;
+padding:0;
+}
+
+
+/*-- top-header --*/
+.header{
+	padding:14px 0;
+	background:#f65a5b;
+}
+.header-left{
+	float:left;
+	width:35%;
+}
+.header-left p{
+	color:#ffffff;
+	font-size: 15px;
+	font-weight: 400;
+}
+.login-section{
+  float: left;
+  padding: 0 0px 0 0;
+  width: 20%;
+  text-align: right;
+}
+.login-section ul {
+	color: #fff;
+}
+.login-section ul li{
+	display:inline-block;
+}
+.login-section ul li a{
+text-decoration:none;
+	color: #fff;
+	font-size: 15px;
+	padding: 0 10px;
+	font-weight: 400;
+}
+.login-section ul li a:hover{
+	color:#000000;
+}
+.sb-search {
+	width: 0%;
+	position: absolute;
+	right: 668px;
+	top: 0px;
+	min-width: 45px;
+	height: 49px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+	outline: none;
+	background:#204056;
+	width: 95%;
+	height: 49px;
+	margin: 0;
+	z-index: 10;
+	padding: 5px 15px;
+	font-size: 15px;
+	color: #ffffff;
+}
+.sb-search-input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.sb-search-input:-moz-placeholder {
+	color: #ffffff;
+}
+.sb-search-input::-moz-placeholder {
+	color: #efb480;
+}
+.sb-search-input:-ms-input-placeholder {
+	color: #ffffff;
+}
+.sb-icon-search,.sb-search-submit  {
+	width: 45px;
+	height: 49px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 71px;
+	text-align: center;
+	cursor: pointer;
+}
+.sb-search-submit {
+	background: #fff url('../images/search.png') no-repeat 10px 17px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+	-webkit-appearance: none;
+}
+.sb-icon-search {
+    background:#fff url('../images/search.png') no-repeat 13px 17px;
+	z-index: 90;
+}
+/* Open state */
+.sb-search.sb-search-open,.no-js .sb-search {
+	width:18%;
+}
+.sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
+	background: #c0c0c0 url('../images/search.png') no-repeat -20px 7px;
+	color: #fff;
+	z-index: 11;
+}
+.sb-search.sb-search-open .sb-search-submit,.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+/*-- //top-header --*/
