@@ -1,3 +1,6 @@
+#Agile Software Development
+![0](http://i.imgur.com/0cujiPL.png)
+
 # FoodGeek
 
 ###This Project is developed using Agile Software development methods in which solutions have evolved through collaboration between self-organizing, cross-functional teams. 
