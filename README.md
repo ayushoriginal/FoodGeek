@@ -8,6 +8,8 @@ We have tried to implement adaptive planning, evolutionary development, early de
 
 Hosted on Bluemix: http://food-geek-sprint-2.eu-gb.mybluemix.net/about.html
 
+## Sprint 1 Videocast
+https://www.youtube.com/watch?v=nN4CXC92oBg
 
 
 ## Sprint 2 Videocast
