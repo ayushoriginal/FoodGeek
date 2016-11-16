@@ -1,0 +1,27 @@
+{
+  "name": "food-geek",
+  "version": "1.0.0",
+  "description": ":fork_and_knife::fries:Agile Software Dev. Project:coffee: Full SCRUM Workflow Reports and Professional Software Development of a Food Ordering Website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushoriginal/FoodGeek.git"
+  },
+  "author": "Nikhil Shagrithaya, Ayush Pareek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushoriginal/FoodGeek/issues"
+  },
+  "homepage": "https://github.com/ayushoriginal/FoodGeek#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cfenv": "^1.0.3",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10"
+  }
+}

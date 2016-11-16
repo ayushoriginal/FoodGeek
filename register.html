@@ -145,22 +145,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="reg">
 					 <p>Welcome, please enter the following details to continue.</p>
 					 <p>If you have previously registered with us, <a href="#">click here</a></p>
-					 <form>
+					 <form id="new-account">
 						 <ul>
 							 <li class="text-info">First Name: </li>
-							 <li><input type="text" value=""></li>
+							 <li><input id="first-name" type="text" value=""></li>
 						 </ul>
 						 <ul>
 							 <li class="text-info">Last Name: </li>
-							 <li><input type="text" value=""></li>
-						 </ul>				 
+							 <li><input id="last-name" type="text" value=""></li>
+						 </ul>	
+						<ul>
+							 <li class="text-info">Username: </li>
+							 <li><input id="username" type="text" value=""></li>
+						 </ul>			 
 						<ul>
 							 <li class="text-info">Email: </li>
-							 <li><input type="text" value=""></li>
+							 <li><input id="email" type="text" value=""></li>
 						 </ul>
 						 <ul>
 							 <li class="text-info">Password: </li>
-							 <li><input type="password" value=""></li>
+							 <li><input id="password" type="password" value=""></li>
 						 </ul>
 						 <ul>
 							 <li class="text-info">Re-enter Password:</li>
@@ -168,11 +172,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						 </ul>
 						 <ul>
 							 <li class="text-info">Mobile Number:</li>
-							 <li><input type="text" value=""></li>
+							 <li><input id="mobile-number" type="text" value=""></li>
 						 </ul>						
 						 <input type="submit" value="REGISTER NOW">
 						 <p class="click">By clicking this button, you are agree to my  <a href="#">Policy Terms and Conditions.</a></p> 
 					 </form>
+					 <script>
+						$('#new-account').submit((event) => {
+							event.preventDefault();
+							const data = {
+								first_name: $('input#first-name').val(),
+								last_name: $('input#last-name').val(),
+								username: $('input#username').val(),
+								email: $('input#email').val(),
+								password: $('input#password').val(),
+								mobile_number: $('input#mobile-number').val(),
+							};
+							$.ajax({
+								type: 'POST',
+					            url: '/register',
+					            data: data
+					        })
+							.done(() => {
+				                    window.location = '/';
+							})
+					        .fail((err) => {
+					            console.log('failed to submit!', err);
+					        });
+						});
+					 </script>
 				 </div>
 			</div>
 			<div class="reg-right">

@@ -40,6 +40,58 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 			});
 		</script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+		 <script>
+    
+   function search()
+    {
+
+	     //    $.ajax({
+		    //       url: '/',
+		    //       type: "POST",
+		    //       // dataType: "jsonp",
+		    //       data: {
+		    //         query: {term: 'c1'}
+		    //       }})
+		    //       .done( ( data ) => {
+		    //       	console.log('data:',data);
+		    //         // response( data.resultArr );
+				  // })
+		    //       .fail((err) => {
+		    //       	console.log('failed to submit!', err);
+		    //       });
+    	console.log("front-end");
+        var city = ["Pizza", "Burger", "Chowmein", "Pasta", "Udaipur", "Chennai","Banglore","Jamshedpur","Patna","Surat","Srinagar","Chandigarh","Panji","Kanpur","Lucknow"];
+        $( "#search1" ).autocomplete({
+        	delay: 1000,
+	      source: ( request, response ) => {
+	        $.ajax({
+		          url: '/',
+		          type: "POST",
+		          // dataType: "jsonp",
+		          data: {
+		            query: request
+		          }})
+		          .done( ( data ) => {
+		          	// console.log('response:', response);
+		          	console.log('data:',data.resultArr);
+		            response(data.resultArr);
+				  })
+		          .fail((err) => {
+		          	console.log(err);
+		          });
+	        }
+	     // source: city
+		});
+        
+            
+    }
+</script>
+
 	<!-- start-smoth-scrolling -->
 
 </head>
@@ -58,15 +110,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 				</div>
 				<!-- start search-->
+				<div class="menu">
 				    <div class="search-box">
 					    <div id="sb-search" class="sb-search">
 							<form>
-								<input class="sb-search-input" placeholder="Enter your search item..." type="search" name="search" id="search">
+								<input class="sb-search-input" placeholder="Enter your search item..." type="text" id="search1" onkeyup="search()" style="position:relative;" onload="changeBackground('white');">
 								<input class="sb-search-submit" type="submit" value="">
 								<span class="sb-icon-search"> </span>
 							</form>
 						</div>
 				    </div>
+					</div>
+					
 					<!-- search-scripts -->
 					<script src="js/classie.js"></script>
 					<script src="js/uisearch.js"></script>
@@ -76,10 +131,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- //search-scripts -->
 				<div class="header-right">
 						<div class="cart box_1">
-							<a href="checkout.html">
-								<h3> <span class="simpleCart_total"> Rs 0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span> items)<img src="images/bag.png" alt=""></h3>
-							</a>	
-							<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
+								<h3>
+								 <span>Nikhil</span> 
+								 <img width="30" height="30" src="images/profile.jpg" alt=""></h3>	
 							<div class="clearfix"> </div>
 						</div>
 				</div>
@@ -127,6 +181,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li><a href="menu.html">OUR MENU</a></li>
 										<li><a href="gallery.html">GALLERY</a></li>
 										<li><a href="recipe-add.html">ADD FOOD ITEM</a>
+										<li><a href="health.html">HEALTH TRACKER</a>
 										<li><a href="contact.html">CONTACT</a></li>
 										<div class="clearfix"></div>
 									</ul>
@@ -162,8 +217,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li><a class="active" href="index.html">HOME</a></li>
 										<li><a href="about.html">ABOUT</a></li>
 										<li><a href="menu.html">OUR MENU</a></li>
-										<li><a href="gallery.html">SPECIAL OFFERS</a></li>
-										<li><a href="typography.html">TODAY'S SPECIAL</a>
+										<li><a href="gallery.html">GALLERY</a></li>
+										<li><a href="add-recipe.html">ADD FOOD ITEM</a>
+										<li><a href="health.html">HEALTH TRACKER</a>
 										<li><a href="contact.html">CONTACT</a></li>
 										<div class="clearfix"></div>
 									</ul>

@@ -7,6 +7,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="EasyPageComments.js"></script>
+<script type="text/javascript">
+function showEasyPageComments(setname, data) {
+  document.getElementById("id-for-list-element").innerHTML = data;
+}
+</script>
+<script type="text/javascript">
+function showEasyPageCommentForm(setname, data) {
+  document.getElementById("id-for-comment-form").innerHTML = data;
+} 
+
+
+function addEasyPageComments() {
+  EasyPageComments.createCommentsList('orders');
+  EasyPageComments.createCommentForm('orders'); }
+
+document.addEventListener("DOMContentLoaded", addEasyPageComments, false)
+</script>
 	<title>Favorites a Hotels and Restaurants Category Flat Bootstrap Responsive Website Template | Orders :: w3layouts</title>
 	<!--fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -40,7 +58,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 			});
 		</script>
-	<!-- start-smoth-scrolling -->
+
+    </script>
 
 </head>
 <body>
@@ -137,296 +156,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //banner -->
 <!-- orders -->
 <div class="orders">
-	<div class="container">
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Pizzas</h4>
-				<p> Lahma Bi Ajeen</p>
-				<P> Margherita</P>
-				<P> Calzone</P>
-				<P> Stromboli</P>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $3.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $6.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $7.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $9.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					</div>
-				</li>
-			<div class="clearfix"></div>
-			
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Burgers</h4>
-				<p>Pepperoni Burger</p>
-				<p>Verde Burger</p>
-				<p>Classic Burger</p>
-				<p>Hickory Burger</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $10.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $20.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $15.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $16.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					</div>
-				</li>
-			<div class="clearfix"></div>
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Hot Dogs</h4>
-				<p>French Poodle</p>
-				<p>Triple Dog</p>
-				<p>Fruity Dog</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $26.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $50.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $15.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					
-					</div>
-				</li>
-			<div class="clearfix"></div>
-			
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Desserts</h4>
-				<p>(Black Forest)</p>
-				<p>Apple Dessert</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $3.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $5.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					
-					</div>
-				</li>
-			<div class="clearfix"></div>
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Cold Beverages</h4>
-				<p>Strawberry Shake</p>
-				<p>Chocolate Shake</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $7.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $9.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">Pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					
-					</div>
-				</li>
-			<div class="clearfix"></div>
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Sandwiches</h4>
-				<p>(Mint With Cheese)</p>
-				<p>(Fresh Tomatoes)</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $9.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $7.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					
-					</div>
-				</li>
-			
-			<div class="clearfix"></div>
-		</div>
-		<div class="order-top">
-			<li class="data order-special-a"><h4>Ice Creams</h4>
-				<p>Butter Scotch</p>
-				<p>Sweet Dreams</p>
-				<p>Honey Moon</p>
-				<p>First Night</p>
-			</li>
-			<li class="data order-special">
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h4>Price</h4>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $6.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $10.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $30.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					<div class="pre-top">
-						<div class="pr-left">
-							<div class="item_add"><span class="item_price"><h6>ONLY $20.00</h6></span></div>
-						</div>
-						<div class="pr-right">
-							<div class="item_add"><span class="item_price"><a href="#">pick</a></span></div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-					</div>
-				</li>
-			
-			<div class="clearfix"></div>
-		</div>
-	</div>
+<div style="color: red; font-size: 30px; text-align: center">Not registered! Please create an account or login!</div>
+<div id="id-for-list-element"></div>
+<div id="id-for-comment-form"></div>
+
+
 </div>
 <!-- order -->	
 <!-- footer-top -->

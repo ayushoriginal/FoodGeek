@@ -6,14 +6,7 @@
 ###This Project is developed using Agile Software development methods in which solutions have evolved through collaboration between self-organizing, cross-functional teams. 
 We have tried to implement adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change. 
 
-Hosted on Bluemix: http://food-geek-sprint-2.eu-gb.mybluemix.net/about.html
-
-## Sprint 1 Videocast
-https://www.youtube.com/watch?v=nN4CXC92oBg
-
-
-## Sprint 2 Videocast
-https://youtu.be/0-OLOZBSQAA
+Hosted on Bluemix: (http://ayush.eu-gb.mybluemix.net/)
 
 ## Home Page
 ![Home Page](http://i.imgur.com/1tq39jI.png)

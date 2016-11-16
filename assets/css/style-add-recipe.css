@@ -148,7 +148,7 @@ label.header span {
 	right:15px;
 	top:0;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel,textarea#message {
+input#firstname,input#category,input#lastname,input#address,input#address2,input#city,input#restaurant, input#image,input#zip,input#email,input#usrtel,textarea#message {
     border: 1px solid #fff;
     color: #fff;
     text-align: justify;
@@ -159,7 +159,7 @@ input#firstname,input#middlename,input#lastname,input#address,input#address2,inp
     background-color: rgba(82, 56, 76, 0.15);
 	font-family: 'Poiret One', cursive;
 }
-input#firstname,input#middlename,input#lastname,input#address,input#address2,input#city,input#state,input#zip,input#email,input#usrtel {
+input#firstname,input#category,input#lastname,input#address,input#address2,input#city,input#restaurant, input#image,input#zip,input#email,input#usrtel {
 	height:40px;
 	padding:0 15px;
 	width:55%;
@@ -316,7 +316,7 @@ select {
 }
 
 @media (max-width:1440px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
 	width:50.9%;
 }
 select {
@@ -333,7 +333,7 @@ label.header {
 	font-size:15px;
 	width:180px;	
 }
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     width: 51.5%;
 }
 select {
@@ -380,7 +380,7 @@ textarea#message {
 }
 
 @media (max-width:1080px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
 	font-size:14px;	
 	width:43%;
 }
@@ -417,7 +417,7 @@ h1.header-agileits {
 }
 
 @media (max-width: 1050px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 41%;
 }
@@ -441,7 +441,7 @@ textarea#message {
 .form-wthree1, .form-wthree2 {
     width: 100%;
 }
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 71.6%;
 }
@@ -455,7 +455,7 @@ textarea#message {
 }
 
 @media (max-width: 900px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 68.6%;
 }
@@ -474,7 +474,7 @@ p.copyright {
 }
 
 @media (max-width: 800px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 64.5%;
 }
@@ -488,7 +488,7 @@ textarea#message {
 }
 
 @media (max-width: 768px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 63.1%;
 }
@@ -502,7 +502,7 @@ textarea#message {
 }
 
 @media (max-width: 736px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 61.5%;
 }
@@ -520,7 +520,7 @@ textarea#message {
 }
 
 @media (max-width: 667px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 57.4%;
 }
@@ -538,7 +538,7 @@ textarea#message {
 }
 
 @media (max-width: 640px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 55.5%;
 }
@@ -562,7 +562,7 @@ textarea#message {
 }
 
 @media (max-width: 600px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width:54.8%;
 }
@@ -594,7 +594,7 @@ textarea#message {
     width: 77%;
     padding: 30px 35px;
 }
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 52%;
 }
@@ -608,7 +608,7 @@ textarea#message {
 }
 
 @media (max-width: 480px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 43%;
 }
@@ -632,7 +632,7 @@ textarea#message {
     width: 70%;
     padding: 25px 30px;
 }
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 88%;
 }
@@ -666,7 +666,7 @@ h1.header-agileits {
 }
 
 @media (max-width: 384px) {
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 14px;
     width: 87%;
 }
@@ -684,7 +684,7 @@ h1.header-agileits {
     width: 65%;
     padding: 25px 25px;
 }
-input#firstname, input#middlename, input#lastname, input#address, input#address2, input#city, input#state, input#zip, input#email, input#usrtel {
+input#firstname, input#category, input#lastname, input#address, input#address2, input#city, input#restaurant, input#image, input#zip, input#email, input#usrtel {
     font-size: 13px;
     width: 84%;
 }

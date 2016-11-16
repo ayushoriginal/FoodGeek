@@ -144,15 +144,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <div class="strip"></div>
 					 <p>Welcome, please enter the following to continue.</p>
 					 <p>If you have previously Login with us, <a href="#">click here</a></p>
-					 <form>
+					 <form id="loginToAccount">
 						 <h5>User Name:</h5>	
-						 <input type="text" value="">
+						 <input id="username" type="text" value="">
 						 <h5>Password:</h5>
-						 <input type="password" value="">					
+						 <input id="password" type="password" value="">					
+						 <div class="unsuccessful-login"></div>
 						 <input type="submit" value="LOGIN">
-						  
 					 </form>
 					<a href="#">Forgot Password ?</a>
+					<script>
+						$('#loginToAccount').submit((event) => {
+							event.preventDefault();
+							const data = {
+								username: $('input#username').val(),
+								password: $('input#password').val(),
+							};
+							$.ajax({
+								type: 'POST',
+					            url: '/login',
+					            data: data
+					        })
+							.done((data) => {
+				                if(data.redirect != 'null')
+				                    window.location = data.redirect;
+				                else{
+				                	console.log('unsuccessful-login!');
+				                	$('.unsuccessful-login').append('<p style="color: red;">Not able to login: check if username and password is correct.</p>');
+				                }
+							})
+					        .fail((err) => {
+					            console.log('failed to submit!', err);
+					        });
+						});
+					</script>
 			</div>
 			<div class="col-md-6 login-right">
 					<h3>NEW REGISTRATION</h3>

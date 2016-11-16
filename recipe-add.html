@@ -7,6 +7,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!doctype html>
 <html lang="en">
 <head>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Ingredient', 'Amount'],
+          ['Carbohydrates',     8],
+          ['Unsaturated Fats',      2],
+          ['Fiber',  4],
+          ['Proteins', 7],
+          ['Saturated Fats',    7]
+        ]);
+
+        var options = {
+          title: 'Nutritional Information',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart7'));
+        chart.draw(data, options);
+      }
+    </script>
 <title>Food Geek</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -39,7 +62,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 			<!-- <link href="css/style-header.css" rel="stylesheet" type="text/css" media="all" /> -->
 
-
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -74,11 +100,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    </div>
 
 					<!-- search-scripts -->
-					<script src="js/classie.js"></script>
+<!-- 					<script src="js/classie.js"></script>
 					<script src="js/uisearch.js"></script>
 						<script>
 							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
+						</script> -->
 				<!-- //search-scripts -->
 				<div class="header-right">
 						<div class="cart box_1">
@@ -106,7 +132,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <h1 class="header-agileits w3layouts w3 w3l agileinfo" style="margin-top: 60px;margin-bottom: 60px">Add Recipe</h1>
 <div class="content-w3ls">
-	<form action="#" method="post">
+	<form action="/recipe-add" id="addRecipeForm">
 		<div class="form-wthree1 wthree w3-agileits agileits-w3layouts agile w3-agile">		
 			
 			<div class="form-control"> 
@@ -115,64 +141,128 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			
 			<div class="form-control"> 
-				<label class="header">Category<span>:</span></label>
-				<input type="text" id="middlename" name="middlename" placeholder="Category" title="Please enter Category" required="">
+				<label class="header">Cost<span>:</span></label>
+				<input type="text" id="restaurant" name="restaurant" placeholder="" title="Please enter Cost" required="">
 			</div>
-			
 			<div class="form-control"> 
-				<label class="header">Restaurant<span>:</span></label>
-				<input type="text" id="state" name="state" placeholder="" title="Please enter Restaurant" required="">
+				<label class="header">Image<span>:</span></label>
+				<input type="text" id="image" name="image" placeholder="" title="Please enter Image" required="">
 			</div>
-		
 		</div>
 		
 		<div class="form-wthree2 wthree w3-agileits agileits-w3layouts agile w3-agile">
 			
 			<div class="form-control">
 				<label class="header">Tags<span>:</span></label>
-				<select>
-					<option value="Country" selected>Tags</option>
-					<option value="USA">Mexican</option>
-					<option value="Germany">Italian</option>
-					<option value="Russia">French</option>
-					<option value="Russia">French</option>
-					<option value="Russia">Indian</option>
-					<option value="Russia">Spicy</option>
-					<option value="Russia">Gourmet</option>
-					<option value="Russia">Sugar-free</option>
-					<option value="Russia">Light</option>
+				<select name="tag-selector" id="tag-selector">
+					<option value="Mexican" selected>Mexican</option>
+					<option value="Italian">Italian</option>
+					<option value="French">French</option>
+					<option value="Spanish">Spanish</option>
+					<option value="Indian">Indian</option>
+					<option value="Spicy">Spicy</option>
+					<option value="Gourmet">Gourmet</option>
+					<option value="Sugar">Sugar-free</option>
+					<option value="Light">Light</option>
 				</select>
 			</div>
 			
-			<div class="form-control">	
-				<label class="header">Email Address <span>:</span></label>
-				<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address" required="">
-			</div>
 			
 			<div class="form-control">
 				<label class="header">Ingredients<span>:</span></label>
-				<select>
-					<option value="Payment" selected>Chicken</option>
-					<option value="Credit Card">Vegetables</option>
-					<option value="Debit Card">Eggs</option>
-					<option value="Paypal">Fish</option>
-					<option value="Online Banking">Milk</option>
+				<select name="ingredients-selector" id="ingredients-selector">
+					<option value="Chicken" selected>Chicken</option>
+					<option value="Vegetables">Vegetables</option>
+					<option value="Eggs">Eggs</option>
+					<option value="Fish">Fish</option>
+					<option value="Milk">Milk</option>
+					<option value="Paneer">Paneer</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label class="header">Base Ingredient<span>:</span></label>
+				<select name="ingredients-selector" id="ingredients-selector">
+			
+					<option value="Vegetables">Vegetable/Fruit</option>
+					<option value="Eggs">Eggs</option>
+					<option value="Fish">Fish</option>
+					<option value="Milk">Milk</option>
+					<option value="Paneer">Paneer</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label class="header">Partial Ingredient<span>:</span></label>
+				<select name="ingredients-selector" id="ingredients-selector">
+
+					<option value="Vegetables">Vegetables</option>
+					<option value="Eggs">Eggs</option>
+					<option value="Fish">Fish</option>
+					<option value="Milk">Milk</option>
+					<option value="Paneer">Paneer</option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label class="header">Veg Ingredient<span>:</span></label>
+				<select name="ingredients-selector" id="ingredients-selector">
+					<option value="Paneer">Wheat</option>
+					<option value="Chicken" selected>Tomato</option>
+					<option value="Vegetables">Potato</option>
+					<option value="Eggs">Apple</option>
+					<option value="Fish">Beans</option>
+					<option value="Milk">None</option>
+					
+				</select>
+			</div>
+			<div class="form-control">
+				<label class="header">Non-Veg Ingredient<span>:</span></label>
+				<select name="ingredients-selector" id="ingredients-selector">
+					<option value="Chicken" selected>Chicken</option>
+					<option value="Vegetables">Fish</option>
+					<option value="Eggs">Crabs</option>
+					<option value="Fish">Prawns</option>
+					<option value="Milk">Beef</option>
+					<option value="Paneer">Mutton</option>
+					<option value="Paneer">None</option>
 				</select>
 			</div>
 		</div>
-		<div class="clear"></div>
-		<div class="form-control">
-			<label class="enquiry">Review <span>:</span></label>
-			<textarea id="message" name="message" placeholder="Describe your experience here..." title="Please enter Your review"></textarea>
-			<div class="clear"></div>
-		</div>
-		<div class="form-control last">
+		<div class="submitted clear"></div>
+		<script type="text/javascript" src="http://www.wootus.com/js/widget.js"></script>
+<script type="text/javascript" src="http://www.wootus.com/nutrition/widgetbox"></script>
+
+		<div><a href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';">Calculate Nutritional Info!</a></div>
+		<div id="hideaway" style="display:none;"><div id="donutchart7" style="width: 450px; height: 250px;"></div></div>
+		<div class="clear" style="margin-bottom: 30px;">
 			<input type="submit" class="register" value="Submit">
 			<input type="reset" class="reset" value="Reset">
-			<div class="clear"></div>
 		</div>	
 	</form>
 </div>
 
+<script>
+	$('#addRecipeForm').submit((event) => {
+		event.preventDefault();
+		const data = {
+			name: $('input#firstname').val(),
+			category: $('input#category').val(),
+			restaurant: $('input#restaurant').val(),
+			image: $('input#image').val(),
+			tag_selector: $('select#tag-selector').val(),
+			email: $('input#email').val(),
+			ingredients_selector: $('select#ingredients-selector').val(),
+		};
+		$.ajax({
+			type: 'POST',
+            url: '/recipe-add',
+            data: data
+        })
+		.done(() => {
+        	$('.submitted').append('<p style="color: green; font-size: 17px; margin-left: 10%;">Recipe submitted successfully!.</p>');
+		})
+        .fail((err) => {
+            console.log('failed to submit!', err);
+        });
+	});
+</script>
 </body>
 </html>
