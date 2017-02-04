@@ -22,3 +22,18 @@ Hosted on Bluemix: (http://ayush.eu-gb.mybluemix.net/)
 
 ## Contact Page
 ![Home Page](http://i.imgur.com/nqj7KLP.png)
+
+# Activity Diagram
+
+[Click here to view](https://www.google.com)
+
+# UI/UX Designs (Wireframes)
+
+![Home](http://i.imgur.com/1CJDGCO.png)
+![d](http://i.imgur.com/RzI4Y46.png)
+![df](http://i.imgur.com/NIY6i9s.png)
+![t](http://i.imgur.com/YmvagrI.png)
+![e](http://i.imgur.com/nijmiwo.png)
+![o](http://i.imgur.com/AsqKgZD.png)
+![q](http://i.imgur.com/KwNESOx.png)
+![q](http://i.imgur.com/TYZtstw.png)
