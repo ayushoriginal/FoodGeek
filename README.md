@@ -23,6 +23,16 @@ Hosted on Bluemix: (http://ayush.eu-gb.mybluemix.net/)
 ## Contact Page
 ![Home Page](http://i.imgur.com/nqj7KLP.png)
 
+# Use Cases
+
+### Basic
+
+![ee](http://i.imgur.com/pLP7KqG.png)
+
+### Extended
+
+![oo](http://i.imgur.com/RIOR8Vs.png)
+
 # Activity Diagram
 
 [Click here to view](https://www.google.com)
