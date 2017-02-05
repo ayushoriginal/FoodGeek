@@ -72,7 +72,15 @@ Hosted on Bluemix: (http://ayush.eu-gb.mybluemix.net/)
 
 # Activity Diagram
 
-[Click here to view](https://www.google.com)
+![io](http://i.imgur.com/N9mBLOg.jpg)
+
+[Click here to see the extended view](https://drive.google.com/file/d/0BwId1e5degAfTHd6VGhSWk9hVVE/view)
+
+# Class Diagram
+
+![hj](http://i.imgur.com/irY9Qfl.jpg)
+
+[Click here to see the extended view](https://drive.google.com/file/d/0BwId1e5degAfalE2T1pCMGlVYkU/view?usp=sharing)
 
 # UI/UX Designs (Wireframes)
 
