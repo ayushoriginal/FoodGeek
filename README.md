@@ -3,9 +3,12 @@
 
 # FoodGeek
 
-###This Project is developed using Agile Software development methods in which solutions have evolved through collaboration between self-organizing, cross-functional teams. 
-We have tried to implement adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change. 
+### See the videocast of Sprint 3 ->  https://www.youtube.com/watch?edit=vd&v=k3PNrzBkyCk
 
+### This Project is developed using Agile Software development methods in which solutions have evolved through collaboration between self-organizing, cross-functional teams. 
+We have tried to implement adaptive planning, evolutionary development, early delivery, continuous improvement and flexibility to quickly respond to change. 
+
+### TL:DR; This project aims to build a platform to enable general public and restaurant managers to improve their diet choices and food quality/services respectively. The application uses the preferences and requirements of the user to suggest matching food items (satisfying nutrition, calorie, taste preferences) which can be ordered online. These food outlets can give the ingredients of their food items and the nutritional value of the items will be calculated and displayed by the system. The users of this application can rate, review, comment, tag or share posts related to these food outlets and explore the nutritional information of specific dishes and meals.
 
 ## Home Page
 ![Home Page](http://i.imgur.com/1tq39jI.png)
@@ -112,6 +115,12 @@ Composite:
 A tree structure of simple and composite objects
 
 In addition, patterns allowed us to communicate using well-known, well understood names for software interactions. This design pattern was improved over the sprints, making them more robust than ad-hoc designs.
+
+# System Architecture Dessign
+
+![](http://i.imgur.com/fvjM8fd.png)
+
+![](http://i.imgur.com/JI6NSiJ.png)
 
 # UI/UX Designs (Wireframes)
 
