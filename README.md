@@ -131,3 +131,28 @@ In addition, patterns allowed us to communicate using well-known, well understoo
 ![ruo](http://i.imgur.com/XvRGg87.png)
 ![ww](http://i.imgur.com/GrQcY0N.png)
 ![qq](http://i.imgur.com/RqiN09g.png)
+
+# Product Backlog
+
+![](http://i.imgur.com/9gKQS6k.png)
+![](http://i.imgur.com/jVXfPXz.png)
+![](http://i.imgur.com/uWOyZES.png)
+![](http://i.imgur.com/15NeFFj.png)
+
+
+# Overall Project Summary
+
+
+The Purpose of the project was to build a user friendly and a smart food ordering experience for its users. We included various features in the project in order to make the entire process intelligent and easy.
+
+With a wide variety of functions that were implemented, some major ones are Addition of food items by user, Calorie Calculator, Dynamic Graphs of each food item, Instant Nutrient Info Widget, Star Rating System, Smart Food Button etc each of which had a special ‘smart’ function to be performed. With each UI/UX design, the software engineering principles were implemented and in each sprint the class diagrams and activity diagrams were revised.
+
+Sprint 1 was focused on decision making regarding various Class Designs, UI/UX Wireframes and activity diagrams. In the implementation part, we completed the basic application and its front-end design.
+
+In Sprint 2, we tried to implement basic functionalities which resulted in a rudimentary but functional website
+
+Sprint 3 was the most exciting part. It focussed on the SMART and ADVANCED features which were hard to implement by themselves and integrating them was another challenge.
+
+The user stories helped in figuring out the user requirements and in spite of all the difficulties faced, they were crucial in figuring out feature selection and helped in solving the various issues while deciding different features.
+
+With the help of FOODGEEK, we hope that users can now order stuff at a cheaper and faster way while making sure that their health is in the optimum condition.
